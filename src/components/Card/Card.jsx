@@ -42,10 +42,10 @@ function Card({ title, timeframe }) {
       <div className="card-content">
         <h2 className="card-title">{cardData.title}</h2>
         <p className="current-data">
-          {`${cardData.timeframes[timeframe].current} ${currentUnits}`}
+          {`${cardData.timeframes[timeframe].current}${currentUnits}`}
         </p>
         <p className="previous-data">
-          {`${previousCaption} - ${cardData.timeframes[timeframe].previous} ${previousUnits}`}
+          {`${previousCaption} - ${cardData.timeframes[timeframe].previous}${previousUnits}`}
         </p>
         <button className="btn meatball" aria-label="more options">
           <img src={ellipsisIcon} alt="ellipsis" />
